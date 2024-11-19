@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkgray;
+    color: black;
+}
+
+
+button {
+    width: 200px ;
+    height: 40px;
+    background: white;
+    color: black;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+    border: none;
+}
+
+.b1 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 320px;
+}
+
+.b2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Números</title>
+    <link rel="stylesheet" href="sorteador de numero.css">
+</head>
+<body>
+    <div class="b1">
+        <div class="b2">
+            <h1>Sorteador de Números Aleatórios</h1>
+            <button onclick="sortearNumero()">Sortear Número</button>
+            <h3 id="numerosSorteados">Números sorteados: </h3>
+        </div>
+    </div>
+
+    <script>
+        var numerosSorteados = []; 
+
+        function sortearNumero() {
+            var numero = Math.floor(Math.random() * 100) + 1; 
+            numerosSorteados.push(numero); 
+            atualizarNumerosSorteados(); 
+        }
+
+        function atualizarNumerosSorteados() {
+            var listaNumeros = "Números sorteados: " + numerosSorteados.join(', ');
+            document.getElementById('numerosSorteados').innerHTML = listaNumeros;
+        }
+    </script>
+</body>
+</html>
